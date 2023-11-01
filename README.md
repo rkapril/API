@@ -51,6 +51,7 @@ import axios from "axios";
 axios
   .get("URL", {
     params: {
+      ID: 12345,
     },
   })
   .then(function (response) {
@@ -60,6 +61,7 @@ axios
    res.status(404).send(error.response.data);
   })
 ```
+### ES7
 ```
 import axios from "axios";
 
