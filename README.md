@@ -4,7 +4,7 @@
 3. REST
 4. gRPC
 ## Authentication Types
-1. No Authentication
+1. No Authentication (Rate Limit)
 2. Basic Authentication
 3. API Key Authorisation
 4. Token Based Authentication
