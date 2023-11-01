@@ -4,10 +4,10 @@
 3. REST
 4. gRPC
 ## Authentication Types
-1. No
-2. Basic
-3. API Key
-4. Token Based
+1. No Authentication
+2. Basic Authentication
+3. API Key Authorisation
+4. Token Based Authentication
 ## Using https
 ```
 import https from "https";
