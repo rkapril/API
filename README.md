@@ -44,6 +44,22 @@ app.get("/", (req, res) => {
 });
 ```
 ## Using axios
+### ES6
+```
+import axios from "axios";
+
+axios
+  .get("URL", {
+    params: {
+    },
+  })
+  .then(function (response) {
+    res.json({ data: response.data });
+  })
+  .catch(function (error) {
+   res.status(404).send(error.response.data);
+  })
+```
 ```
 import axios from "axios";
 
