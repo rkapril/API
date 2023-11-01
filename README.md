@@ -27,9 +27,9 @@ app.get("/", (req, res) => {
     } catch (error) {
       console.error("Failed to parse response:", error.message);
       res.status(500).send("Failed to fetch activity. Please try again.");
-      }
-    });
+    }
   });
+});
 
   request.on("error", (error) => {
     console.log("Failed to make request:", error.message);
