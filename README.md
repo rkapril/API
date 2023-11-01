@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
   const request = https.request(options, (response) => {
     let data = "";
     response.on("data", (chunk) => {
-    data += chunk;
-  });
+      data += chunk;
+    });
 
     response.on("end", () => {
       try {
