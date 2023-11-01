@@ -3,6 +3,11 @@
 2. SOAP
 3. REST
 4. gRPC
+## Authentication Types
+1. No
+2. Basic
+3. API Key
+4. Token Based
 ## Using https
 ```
 import https from "https";
