@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     hostname: "bored-api.appbrewery.com",
     path: "/random",
     method: "GET",
-};
+  };
 
   const request = https.request(options, (response) => {
     let data = "";
