@@ -3,7 +3,7 @@
 2. SOAP
 3. REST
 4. gRPC
-
+## Using https
 ```
 import https from "https";
 
@@ -36,5 +36,19 @@ app.get("/", (req, res) => {
     res.status(500).send("Failed to fetch activity. Please try again.");
   });
   request.end();
+});
+```
+## Using axios
+```
+import axios from "axios";
+
+app.get("/", async (req, res) => {
+  try {
+    const response = await axios.get("https://bored.api.appbrewery.com/random");
+    res.render("index.ejs", { activity: response });
+  } catch (error) {
+    console.error("Failed to make request:", error.message);
+    res.status(500).send("Failed to fetch activity. Please try again.")
+  }
 });
 ```
