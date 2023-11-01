@@ -45,7 +45,7 @@ import axios from "axios";
 app.get("/", async (req, res) => {
   try {
     const response = await axios.get("https://bored.api.appbrewery.com/random");
-    res.render("index.ejs", { activity: response });
+    res.render("index.ejs", { activity: response.data });
   } catch (error) {
     console.error("Failed to make request:", error.message);
     res.status(500).send("Failed to fetch activity. Please try again.");
