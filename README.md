@@ -7,7 +7,7 @@
 1. No Authentication (Rate Limit)
 2. Basic Authentication (Base64)
 3. API Key Authorisation
-4. Token Based Authentication
+4. Token Based Authentication (OAuth 2.0)
 ## Using https
 ```
 import https from "https";
